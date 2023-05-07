@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(139, 74, 200);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 20px auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(139, 74, 200); */
+}
+
+.main h1 {
+  font-size: 54px;
+  color: white;
+}
+
+.main h2 {
+  display: inline-block;
+  background-color: rgb(218, 136, 243);
+  border-radius: 20px;
+  margin: 6px;
+  padding: 12px 5px;
+}
+
+button {
+  margin: 6px;
+  width: 12rem;
+  padding: 12px 5px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px 3px;
+  background-color: #c947f1;
+}
+
+#pauseGame {
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 600px;
+}
+
+.square {
+  height: 180px;
+  width: 180px;
+  border: 1px solid black;
+  margin: 10px;
+  box-shadow: 1px 2px 3px black;
+  border-radius: 5px;
+}
+
+.mole {
+  background: url(./mole.png);
+  background-size: cover;
+}
+
+@media (max-width: 850px) {
+    
+  .square {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 675px) {
+    
+    .grid
+    {
+        width: 90%;
+    }
+  .square {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 540px) {
+    .grid
+    {
+        width: 75%;
+    }
+  .square {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+    .grid
+    {
+        width: 65%;
+    }
+  .square {
+    width: 80px;
+    height: 80px;
+  }
+}
